@@ -3,9 +3,65 @@
 <head> <!--head section contains file info like SEO and stylesheet reference link-->
   <meta charset="UTF-8">
   <title>Sahil Shah</title> <!--shows up on the tab-->
-  <link rel="stylesheet" href="../CSS/styles.css"> <!--the ..CSS says to jump out of the folder the file is in, otherwise it would be .CSS-->
+  <link rel="stylesheet" href="../CSS/styles.css"> <!--the ../CSS says to jump out of the folder the file is in, otherwise it would be ./CSS-->
 </head>
 <body>
-  <h1>Welcome to my website!</h1> <!--h1 to h6 gets smaller-->
+  <header id="mainHeader">
+    <div class="container">
+      <h1>Sahil Shah</h1> <!--h1 to h6 gets smaller-->
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Career.html">Career</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <section id="jumbo">
+    <div class="container jumbo">
+      <h1>Hi I'm Sahil,<br><br> A proactive and creative engineer with a hunger to learn.</h1>
+      <img src="../images/Headshot.jpg" alt="Austin Skyline">
+      <a href="../files/PublicResume.pdf" target="_blank" class="buttonExternal">
+        <button>See My Resume</button>
+      </a>
+    </div>
+  </section>
+
+  <div class="container">
+    <aside id="sideBar">
+      <p>Click here to learn baout my most recent adventure</p>
+    </aside>
+    <section id="main">
+       <h2>Section Title</h2>
+       <p>I'm currently a 3rd year student at the University of Texas at Austin studying Computer Science and Mechanical Engineering.
+        <br><br>
+        This past summer I interned at The Home Depot as a Software Engineering Intern. There, I got to build a machine learning pipeline 
+        that generated column descriptions for big data in a cloud data warehouse.
+        <br><br>
+        This Fall, I will continue my third semester as Research Assstant the Fire Research Group. Improving fire safety through engineered experiments. 
+        I will also be on the Exective Board and a dancer on Texas Raas, an Indian cultural dance team.</p>
+    </section>
+  </div>
+  <footer id="mainFooter">
+    <p>Copyright &copy; 2023 Sahil Shah</p>
+  </footer>
 </body>
 </html>
+
+<!--
+
+
+Sahil Shah
+
+I'm currently a 3rd year student at the University of Texas at Austin studying Computer Science and Mechanical Engineering.
+
+This past summer I interned at The Home Depot as a Software Engineering Intern. There, I got to build a machine learning pipeline 
+that generated column descriptions for big data in a cloud data warehouse.
+
+This Fall, I will continue my third semester as Research Assstant the Fire Research Group. Improving fire safety through engineered experiments. 
+I will also be on the Exective Board and a dancer on Texas Raas, an Indian cultural dance team.
+
+
+-->

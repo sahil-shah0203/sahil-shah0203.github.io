@@ -1,3 +1,116 @@
-h1 {
-    color: green;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5em; /*1 em is whatever the font size is (or you could just specify this in px*/
+    margin: 0;
+}
+.container{
+    width: 80%; /*80% of available width makes it responsive*/
+    margin: auto; /*equal margin on both sides (centering it)*/
+    overflow: hidden; /*if anything goes outside of container, no scroll bars*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, ul {
+    margin: 0;
+    padding: 0;
+}
+#mainHeader{
+    background: white; /*you can shorten hex to 3 digits if 6 digits are all same i.e. 333=333333*/
+    color: #bf5700;
+    padding: 10px 0;
+    padding-right: 17px;
+    border-bottom: 1px solid #bf5700;
+    border-top: 6px solid #bf5700;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#mainNav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#mainNav li {
+    margin-right: 20px;
+    padding: 10px;
+}
+#mainNav a {
+    color: #bf5700;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+#mainNav li:hover {
+    background: #be7a4375;
+}
+.jumbo {
+    padding: 125px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /*vertical*/
+    justify-content: center; /*horizontal*/
+}
+#jumbo img{
+    max-width: 25%;
+    border-radius: 50%;
+    
+}
+#jumbo h1 {
+    max-width: 25%; 
+}
+.buttonExternal {
+    text-decoration: none;
+    flex-basis: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 25%;
+    position: relative;
+    bottom: 200px;
+
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box; /*tells sections to take into account padding*/
+}
+#sideBar {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    border-left:1px solid #bf5700;
+    box-sizing: border-box;
+}
+p {
+    border-top: 1px solid black;
+    padding-top: 0px; /*works for all directions*/
+    padding: 0px 0px 0px 0px; /*top right bottom left*/
+    padding: 0px 0px; /*top-bottom left-right*/
+    padding: 0px; /*all the way around*/
+    margin-top: 40px; /*mooves paragraph down*/
+}
+#mainFooter {
+    background: #bf5700;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+@media (max-width: 768px){
+    #main, #sidebar, #jumbo h1{
+        width: 100%;
+        float: none;
+        border: none;
+    }
+}
+@media (max-width: 768px) {
+    .buttonExternal {
+      position: static; /* Reset the position for small screens */
+      margin-top: 10px; /* Add margin for spacing */
+      width: 100%; /* Make the button full width */
+    }
+.wrapper {
+    padding-right: 17px; /* Width of the scrollbar */
+    box-sizing: content-box;
 }
