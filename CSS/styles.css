@@ -12,6 +12,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.pageBody{
+    padding-top: 40px;
+}
 h1, ul {
     margin: 0;
     padding: 0;
